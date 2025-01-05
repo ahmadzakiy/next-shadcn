@@ -8,7 +8,7 @@ export default function Page() {
         <Button variant='default' size='sm'>Create Tokens</Button>
       </div>
       <div className="container mx-auto">
-        <h1 className="text-center text-3xl font-bold mb-2">Dump Fun</h1>
+        <h1 className="text-center text-3xl font-bold mb-2">Dumb Fun</h1>
         <p className="text-center text-xl mb-8 font-bold text-trending">Effortlessly Create and Trade Your Tokens</p>
         <TabsView />
       </div>
