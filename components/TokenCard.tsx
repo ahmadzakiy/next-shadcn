@@ -10,9 +10,9 @@ export type TokenData = {
 }
 
 export function TokenCard({ name, symbol, price, marketCap, description, isTrending }: TokenData) {
-  const borderColor = isTrending ? 'border-trending' : 'border-muted'
+  const borderColor = isTrending ? 'border-trending shake-animation' : 'border-muted'
   return (
-    <Card className={`${borderColor} bg-background hover:bg-neutral-800 transition-colors`}>
+    <Card className={`${borderColor} bg-background hover:bg-neutral-800 transition-colors cursor-pointer`}>
       <CardHeader className="p-4">
         
         <div className="flex items-center justify-between">

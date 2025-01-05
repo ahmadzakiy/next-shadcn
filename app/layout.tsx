@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dump Fun',
+  title: 'Dumb Fun',
   description: 'Effortlessly Create and Trade Your Tokens',
 }
 
@@ -28,10 +28,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
+        <footer className="text-center text-sm text-muted-foreground py-4 mt-8">
+          Developed by Zakiy with v0
+        </footer>
       </body>
-      <footer className="text-center text-sm text-muted-foreground py-4 mt-8">
-        Developed by Zakiy with v0
-      </footer>
     </html>
   )
 }
