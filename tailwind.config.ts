@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from 'tailwindcss/colors'
 
 export default {
     darkMode: ["class"],
@@ -10,6 +11,7 @@ export default {
   theme: {
   	extend: {
   		colors: {
+				trending: 'hsl(170.59deg 100% 50%)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -21,8 +23,8 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				DEFAULT: colors.green[400],
+  				foreground: 'black'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
