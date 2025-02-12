@@ -1,20 +1,21 @@
-import type { Metadata } from 'next'
-import { Geist, Azeret_Mono as Geist_Mono } from 'next/font/google'
+import type { Metadata } from "next"
+import { Geist, Azeret_Mono as Geist_Mono } from "next/font/google"
+import AppWalletProvider from "../components/AppWalletProvider"
 
-import './globals.css'
+import "./globals.css"
 
 const geistSans = Geist({
-  subsets: ['latin'],
-  variable: '--font-sans',
+  subsets: ["latin"],
+  variable: "--font-sans",
 })
 const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
+  subsets: ["latin"],
+  variable: "--font-mono",
 })
 
 export const metadata: Metadata = {
-  title: 'Dumb Fun',
-  description: 'Effortlessly Create and Trade Your Tokens',
+  title: "Dumb Fun",
+  description: "Effortlessly Create and Trade Your Tokens",
 }
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-        {children}
+        <AppWalletProvider>{children}</AppWalletProvider>
         <footer className="text-center text-sm text-muted-foreground py-4 mt-8">
           Developed by Zakiy with v0
         </footer>
@@ -35,4 +36,3 @@ export default function RootLayout({
     </html>
   )
 }
-
